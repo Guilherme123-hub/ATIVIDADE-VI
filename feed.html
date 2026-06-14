@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - Social App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>SocialApp</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="contrast">Início</a></li>
+                <li><a href="#" class="contrast">Buscar</a></li>
+                <li><a href="#" class="contrast">Perfil</a></li>
+                <li><a href="index.html" class="secondary">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container feed-container">
+        
+        <div class="banner-container">
+            <img src="iimg/imagem-cabecalho.jpg" alt="Imagem de cabeçalho do perfil" class="imagem-cabecalho">
+        </div>
+
+        <section id="novo-post">
+            <article>
+                <div class="post-header">
+                    <img src="iimg/avatar.jpg" alt="Avatar do usuário" class="avatar">
+                    <div>
+                        <strong>João Silva</strong><br>
+                        <small>@joaosilva</small>
+                    </div>
+                </div>
+                <form onsubmit="event.preventDefault();">
+                    <label for="texto-post">O que está acontecendo?</label>
+                    <textarea id="texto-post" name="texto-post" rows="4" placeholder="Escreva seu post aqui..."></textarea>
+                    <button type="submit" class="outline">Publicar</button>
+                </form>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="posts-criados">
+            <article class="post">
+                <div class="post-header">
+                    <img src="iimg/avatar.jpg" alt="Avatar do usuário" class="avatar">
+                    <div>
+                        <strong>Maria Souza</strong><br>
+                        <small>@mariasouza</small>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p>Este é um exemplo de postagem no feed. Estudando Desenvolvimento Web I e praticando com o framework Pico CSS! 🚀</p>
+                </div>
+                <footer class="post-footer">
+                    <span class="icone" title="Curtir">❤️ 12</span>
+                    <span class="icone" title="Comentar">💬 3</span>
+                </footer>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

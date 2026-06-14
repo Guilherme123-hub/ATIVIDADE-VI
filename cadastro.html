@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Social App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main class="container form-container">
+        <article>
+            <h1 class="text-center">Criar Conta</h1>
+            <form action="feed.html" method="GET">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Nome de usuário (@)" required>
+
+                <div class="grid">
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <div>
+                        <label for="confirmar_senha">Confirmação de senha</label>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div>
+                        <label for="genero">Gênero</label>
+                        <select id="genero" name="genero" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                            <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </div>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+            <div class="links-uteis text-center">
+                <a href="index.html">Já possuo uma conta</a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
